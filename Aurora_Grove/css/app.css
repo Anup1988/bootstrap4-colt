@@ -7638,6 +7638,8 @@ body {
 @media (max-width: 768px) {
   .navbar {
     background: #1f1f1f; }
+    .navbar .nav-link:hover {
+      border-bottom: none; }
 
   #showcase {
     min-height: 500px; }
