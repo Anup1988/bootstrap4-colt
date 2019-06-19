@@ -49,7 +49,7 @@
             <a href="#" class="nav-link">Contact</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Book</a>
+            <a href="#" class="nav-link" data-toggle='modal' data-target='#myModal'>Book</a>
           </li>
         </ul>
       </div>
@@ -67,7 +67,7 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dicta
           dolore ratione.
         </p>
-        <button id="book" class="btn btn-primary btn-lg px-5">BOOK NOW</button>
+        <button id="book" class="btn btn-primary btn-lg px-5" data-toggle='modal' data-target='#myModal'>BOOK NOW</button>
       </div>
     </section>
     <section id="" class="mt-5">
@@ -306,9 +306,64 @@
           <a href="" class='nav-link text-white'>CONTACT</a>
         </li>
         <li class="nav-item">
-          <a href="" class='nav-link text-white'>BOOK NOW</a>
+          <a href="" class='nav-link text-white' data-toggle='modal' data-target='#myModal'>BOOK NOW</a>
         </li>
       </ul>
+    </section>
+
+    <!-- The Modal -->
+    <section>
+      <div class="modal" id='myModal'>
+        <div class="modal-dialog">
+
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h5 class="modal-title">New Booking</h5>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>    
+            </div>
+            <!-- Modal Body -->
+            <div class="modal-body">
+                <p>Please fill out the form below and we'll get back to you as soon as possible</p>
+                <form action="">
+                  <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id='email' class='form-control' placeholder="name@example.com">
+                  </div>
+                  <div class="form-group">
+                    <label for="dropdown1">Number of Adults</label>
+                    <select class="form-control" id="dropdown1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        
+                      </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="dropdown2">Number of Children</label>
+                    <select class="form-control" id="dropdown2">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        
+                      </select>
+                  </div>
+                  <div class="form-group">
+                      <label for="textarea1">Additional Requests</label>
+                      <textarea class="form-control" id="textarea1" rows="3"></textarea>
+                    </div>
+                </form>
+            </div>
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button type='button' class='btn btn-primary'>Submit Request</button>  
+                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <script
