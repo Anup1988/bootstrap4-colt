@@ -54,10 +54,17 @@ body {
   }
 }
 
+#quotes {
+  i {
+    opacity: 0.3;
+  }
+}
+
 @media (max-width: 768px) {
   .navbar {
     background: #1f1f1f;
   }
+
   #showcase {
     min-height: 500px;
     h1 {
